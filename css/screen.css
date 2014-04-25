@@ -1,0 +1,417 @@
+/* 
+    Document   : screen
+    Created on : Jan 23, 2012, 2:45:23 PM
+    Author     : James
+    Description:
+        Purpose of the stylesheet follows.
+
+1 column (6.6849817% or 73px) wide
+2 columns (15.018315% or 164px) wide
+3 columns (23.3516483% or 255px) wide
+4 columns (31.6849816% or 346px) wide
+5 columns (40.0183149% or 437px) wide
+6 columns (48.3516482% or 528px) wide
+7 columns (56.6849815% or 619px) wide
+8 columns (65.0183148% or 710px) wide
+9 columns (73.3516481% or 801px) wide
+10 columns (81.6849814% or 892px) wide
+11 columns (90.0183147% or 983px) wide
+12 columns (98.351648% or 1074px) wide
+
+*/
+
+/*=====================Global Styling=====================*/
+
+html {
+   background        : url('/images/background.jpg') no-repeat center center fixed;
+   
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size   : cover;
+}
+
+body {
+   margin            : 0;
+   padding           : 0;
+   font-family       : Geneva, Arial, 'Times New Roman', serif;
+   font-size         : 16px;
+}
+
+a {
+   color             : #D0D4A3;
+}
+
+img {
+   width             : 400px;
+}
+
+#wrapper {
+   width             : 98.351648%;
+   margin-left       : auto;
+   margin-right      : auto;
+   max-width         : 1100px;
+   min-width         : 800px;
+}
+
+p {
+   text-indent       : 1.5em;
+   margin-bottom     : 0;
+   max-width         : 500px;
+}
+
+p + p {
+   margin-top        : 0;
+}
+
+nav {
+   background-color  : #7C7E61;
+   color             : #D0D4A3;
+   padding           : 3px 0px 3px 10px;
+}
+
+figure {
+   background-color  : #7C7E61;
+   padding           : 10px;
+
+   border-radius     : 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+}
+
+/*=====================Header Area=====================*/
+
+#page_header{
+   display           : block;
+   height            : 234px;
+   font-family       : Stencil, 'Times New Roman', serif;
+   color             : #000000;
+   background-color  : #A4A875;
+
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   -webkit-border-bottom-left-radius: 10px;
+   -webkit-border-bottom-right-radius: 10px;
+   -moz-border-bottom-left-radius: 10px;
+   -moz-border-bottom-right-radius: 10px;
+}
+
+#page_header img{
+   width             : 200px;
+}
+
+#page_title {
+   float             : right;
+   font-size         : 70px;
+   text-align        : center;
+   padding-right     : 10px;
+}
+
+#page_nav {
+   display           : block;
+   font-size         : 21px;
+   padding-right     : 5px;
+
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   -webkit-border-bottom-left-radius: 10px;
+   -webkit-border-bottom-right-radius: 10px;
+   -moz-border-bottom-left-radius: 10px;
+   -moz-border-bottom-right-radius: 10px;
+}
+
+#search {
+   float             : right;
+   line-height       : normal;
+}
+
+/*=====================Main Body Area=====================*/
+
+#content_container {
+   overflow          : hidden;
+   padding           : 10px;
+   float             : left;
+}
+
+#plane_description {
+   overflow          : hidden;
+   padding           : 10px;
+   float             : left;
+   width             : 40%;
+   background-color  : #A4A875;
+   margin            : 20px 0px 10px 0px;
+
+   border-radius     : 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+}
+
+#plane_description h1 {
+   font-family       : Stencil, Arial, 'Times New Roman', serif;
+   font-weight       : normal;
+}
+
+.flag {
+   width             : 30px;
+}
+
+#left_nav {
+   width             : 22%;
+   float             : left;
+   font-size         : 14px;
+   margin            : 20px 10px 10px 10px;
+
+   border-radius     : 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+}
+
+nav h2 {
+   font-family       : Stencil, Arial, 'Times New Roman', serif;
+   font-weight       : normal;
+}
+
+.countries {
+   float             : left;
+   text-align        : center;
+   border            : 2px solid #A4A875;
+}
+
+.types {
+   float             : left;
+   text-align        : center;
+   width             : 23%;
+   border            : 2px solid #A4A875;
+}
+
+.types img {
+   width             : 100%;
+}
+
+#error_pages {
+   background-color  : #A4A875;
+   padding           : 10px;
+   width             : 60%;
+   margin            : 10px auto 10px auto;
+
+   border-radius     : 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+}
+
+#error_pages a {
+   color             : #000;
+}
+
+#error_image {
+   float             : left;
+   margin            : 0px 0px 10px 0px;
+}
+
+#error_image img {
+   width             : 100%;
+}
+
+.planePic {
+   float             : left;
+   text-align        : center;
+   width             : 23%;
+   height            : 235px;
+   position          : relative;
+   border            : 2px solid #A4A875;
+}
+
+.planePic figcaption {
+   position          : absolute;
+   bottom            : 5px;
+   text-align        : center;
+   width             : 100%;
+}
+
+.planePic a img {
+   width             : 100%;
+
+}
+
+.article_pic {
+   float             : left;
+   text-align        : center;
+   margin            : 0px 15px 0px 10px;
+}
+
+.article_pic img {
+   width             : 200px;
+
+}
+
+.specs {
+   width             : 29%;
+   float             : left;
+   font-size         : 14px;
+   margin            : 20px 10px 10px 10px;
+   background-color  : #7C7E61;
+   color             : #D0D4A3;
+   padding           : 3px 0px 3px 10px;
+   font-family       : 'Courier New', Arial, 'Times New Roman', serif;
+   background-color  : #7C7E61;
+
+   border-radius     : 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+}
+
+.specs h2 {
+   margin            : 10px 0px;
+   font-family       : Stencil, Arial, 'Times New Roman', serif;
+   font-weight       : normal;
+}
+
+#text_field {
+   overflow          : hidden;
+   padding           : 0px 10px 10px 50px;
+   float             : left;
+   width             : 60%;
+   background-color  : #A4A875;
+   margin            : 20px 0px 10px 0px;
+
+   border-radius     : 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+}
+
+/*=====================Picture Slider==================*/
+
+#fadeshowwrapper {
+   clear             : both;
+   text-align        : center;
+   width             : 50%;
+   margin-left       : auto;
+   margin-right      : auto;
+}
+
+#fadeshowtoggler {
+   width             : 70%;
+   text-align        : center;
+   margin-top        : 10px;
+}
+
+#fadeshowtoggler a img {
+   width             : 27px;
+}
+
+/*=====================Form Area=======================*/
+
+#form_wrapper {
+   float             : left;
+   padding           : 10px;
+   background-color  : #A4A875;
+   margin-right      : 10px;
+
+   border-radius     : 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+}
+
+fieldset {
+   margin            : 10px;
+}
+
+fieldset img {
+   width             : 100px;
+}
+
+label {
+   float             : left;
+   text-align        : right;
+   display           : block;
+   margin-right      : 8px;
+}
+
+legend {
+   background        : #7C7E61;
+   padding           : 2px 6px;
+}
+
+textarea {
+   width             : 250px;
+   height            : 250px;
+}
+
+#contact_aside {
+   padding           : 10px;
+   float             : left;
+   background-color  : #A4A875;
+   margin-top        : 10px;
+
+   border-radius     : 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+}
+
+#php_error {
+   background: #ff0000;
+   font-family: Stencil, Arial, 'Times New Roman', serif;
+   color: #ffffff;
+   width: 340px;
+   margin-left: 10px;
+}
+
+#php_success {
+   background: #00ff00;
+   font-family: Stencil, Arial, 'Times New Roman', serif;
+   color: #000000;
+   width: 340px;
+   margin-left: 10px;
+}
+
+
+/*=====================Footer Area=====================*/
+
+#bibliography {
+   font-family       : Geneva, Arial, 'Times New Roman', serif;
+   font-size         : 10px;
+   padding-top       : 20px;
+   padding-left      : 10px;
+   clear             : both;
+}
+
+#bibliography a {
+   color             : #000;
+}
+
+#footer_nav {
+   padding           : 3px 10px;
+   font-size         : 18px;
+   background-color  : #7C7E61;
+
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   -webkit-border-top-left-radius: 10px;
+   -webkit-border-top-right-radius: 10px;
+   -moz-border-top-left-radius: 10px;
+   -moz-border-top-right-radius: 10px;
+}
+
+#page_footer {
+   font-family       : Stencil, 'Times New Roman', serif;
+   font-size         : 18px;
+   color             : #000;
+   background-color  : #A4A875;
+   clear             : both;
+
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   -webkit-border-top-left-radius: 10px;
+   -webkit-border-top-right-radius: 10px;
+   -moz-border-top-left-radius: 10px;
+   -moz-border-top-right-radius: 10px;
+}
+
+#page_footer div {
+   padding-left      : 10px;
+}
+
+.vcard_hidden, .type, .country-name {
+   height            : 0px;
+   display           : none;
+}
