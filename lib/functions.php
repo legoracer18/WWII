@@ -4,30 +4,9 @@
  */
 
 /*
- * This function is for the connection to the database
+ * This is to grab the connection funcion to be able to connect to the database.
  */
-function dbConnection() {
-
-   $server     = 'localhost';
-   $username   = 'jamespar_WWII';
-   $password   = '7jnGqbRsgb0M';
-   $dbname     = 'jamespar_wwii';
-   $dsn        = 'mysql:host='.$server.';dbname='.$dbname;
-   
-   try {
-      $wwii = new PDO($dsn, $username, $password);
-   } catch (PDOException $e) {
-      header('Location: /500.php');
-      exit;
-   }
-
-   if (!empty($wwii)){
-      return $wwii;
-   } else {
-      header('Location: /500.php');
-      exit;
-   }
-}
+require $_SERVER['DOCUMENT_ROOT'] . '/lib/connection.php';
 
 /*
  * This function is for the home page image links
