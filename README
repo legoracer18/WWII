@@ -1,5 +1,3 @@
 This is the files that I use for my website, www.worldwartwoairplanes.com. This is an example of using MVC modeling to provide a dynamic website utilyzing PHP to interact with a MySQL database that stores the data that will be provided.
 
 This will be updated to include content management through the website itself instead of interacting with phpMyAdmin. Also to be updated is the navigation should become dynamic instead of in static modules as it currently sits.
-
-This should be deleted soon.
