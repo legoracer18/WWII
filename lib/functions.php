@@ -68,7 +68,7 @@ function getPlanes($picList) {
 /*
  * This function gets the description section for a plane all set up.
  */
-function getPlaneDescription($planeInfo) {
+function setPlaneDescription($planeInfo) {
    $output = '<h1>'.$planeInfo['plane_name'].'</h1>';
    $output .= '<figure class="article_pic">';
    $output .= '<img src="'.$planeInfo['urlPATH'].'" alt="'.$planeInfo['alt'].'"></figure>';
