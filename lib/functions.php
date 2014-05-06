@@ -11,7 +11,8 @@
 
 /*
  * This is to grab the connection funcion to be able to connect to the 
- * database.
+ * database from the connection.php file. It is seperated in order to
+ * keep sensitive info off of the github repository.
  */
 require $_SERVER['DOCUMENT_ROOT'] . '/lib/connection.php';
 

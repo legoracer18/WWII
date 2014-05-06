@@ -1,8 +1,18 @@
 <?php
+
 /*
- * The main model for the site www.worldwartwoairplanes.com
+ * DOCUMENT     : /model/model.php
+ * AUTHOR       : James Park
+ * SITE         : www.worldwartwoairplanes.com
+ * COPYRIGHT    : 2014
+ * DESCRIPTION  : This is the main model file for the site 
+ *                www.worldwartwoairplanes.com
  */
 
+/*
+ * This grabs the functions.php file that will grab the connection file
+ * that will have the PDO connection that will be used.
+ */
 require $_SERVER['DOCUMENT_ROOT'] . '/lib/functions.php';
 
 /*
@@ -27,13 +37,15 @@ function getSupport($id) {
    if (!empty($results)) {
       return $results;
    } else {
-      return FALSE;
+      header('Location: /500.php');
+      exit;
    }
 }
 
 /*
  * This will get the main pictures for the planes that are from allied or
- * axis countries.
+ * axis countries as well as their plane_id and type so that they can be 
+ * ordered by those values.
  */
 function getCountryCat($c1, $c2, $c3) {
    $conn = dbConnection();
@@ -63,13 +75,15 @@ function getCountryCat($c1, $c2, $c3) {
    if (!empty($results)) {
       return $results;
    } else {
-      return FALSE;
+      header('Location: /500.php');
+      exit;
    }
 }
 
 /*
  * This will get the main pictures for the planes that are fighters, bombers
- * etc.
+ * and transports, as well as their plane_id and type so that they can be 
+ * ordered by those values.
  */
 function getTypeCat($type) {
    $conn = dbConnection();
@@ -95,7 +109,8 @@ function getTypeCat($type) {
    if (!empty($results)) {
       return $results;
    } else {
-      return FALSE;
+      header('Location: /500.php');
+      exit;
    }
 }
 
@@ -124,7 +139,8 @@ function getPlaneInfo($id) {
    if (!empty($results)) {
       return $results;
    } else {
-      return FALSE;
+      header('Location: /500.php');
+      exit;
    }
 }
 
@@ -155,12 +171,13 @@ function getSpecsInfo($id) {
    if (!empty($results)) {
       return $results;
    } else {
-      return FALSE;
+      header('Location: /500.php');
+      exit;
    }
 }
 
 /*
- * This gets a similar type of plane
+ * This gets the similar planes based on the type of the plane being displayed.
  */
 function getSimilarPlanes($type) {
    $conn = dbConnection();
@@ -183,10 +200,15 @@ function getSimilarPlanes($type) {
    if (!empty($results)) {
       return $results;
    } else {
-      return FALSE;
+      header('Location: /500.php');
+      exit;
    }
 }
 
+/*
+ * This gets the pictures of the plane based on the plane_id so that
+ * it can be put into the slider.
+ */
 function getPlanePics($id) {
    $conn = dbConnection();
    $sql = "SELECT urlPATH FROM images WHERE plane_ID = :id";
@@ -204,7 +226,8 @@ function getPlanePics($id) {
    if (!empty($results)) {
       return $results;
    } else {
-      return FALSE;
+      header('Location: /500.php');
+      exit;
    }
 }
 ?>
