@@ -31,17 +31,23 @@
          </header>
          <?php
          // This will be the left nav area that will hold other similar type planes
-         echo $leftNav;
+         if (isset($leftNav)) {
+            echo $leftNav;
+         }
          ?>
          <main id="plane_description">
             <?php
             // This will be the main description area.
-            echo $planeDescription;
+            if (isset($planeDescription)) {
+               echo $planeDescription;
+            }
             ?>
          </main><!--/content_container-->
          <?php 
          // This will be the specification table
-         echo $specification;
+         if (isset($specification)) {
+            echo $specification;
+         }
          ?>
          <div id="fadeshowwrapper">
             <div id="fadeshow"></div>
@@ -54,7 +60,9 @@
          </div>
          <?php
          // This will be the sources if there are any.
-         echo $sources;
+         if (isset($sources)) {
+            echo $sources;
+         }
          // This is the footer and it includes the footer navigation
          include $_SERVER['DOCUMENT_ROOT'] . '/modules/footer.php';
          ?>

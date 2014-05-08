@@ -17,7 +17,9 @@
             <?php
             // This will hold everything that is between the header and the footer.
             echo '<section id="text_field">'.$pageInfo['html_code'].'</section>';
-            echo $homePageLinks;
+            if (isset($homePageLinks)) {
+               echo $homePageLinks;
+            }
             ?>
          </main><!--/content_container-->
          <?php 

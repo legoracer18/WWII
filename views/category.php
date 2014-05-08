@@ -17,7 +17,9 @@
          <main id="content_container">
             <?php
             // This will hold everything that is between the header and the footer.
-            echo $planeList;
+            if (isset($planeList)) {
+               echo $planeList;
+            }
             ?>
          </main><!--/content_container-->
          <?php 
