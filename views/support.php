@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <!--/////////////////////////////////////////////
+         /*
+          * DOCUMENT     : support.php
+          * AUTHOR       : James Park
+          * SITE         : www.worldwartwoairplanes.com
+          * COPYRIGHT    : 2014
+          * DESCRIPTION  : This is the view that is set up for displaying a
+          *                general page where all (except for the home page) the 
+          *                content is straight from the database; for the site 
+          *                www.worldwartwoairplanes.com
+          */
+      /////////////////////////////////////////////-->
       <title><?php echo $pageInfo['title']; ?> | World War II Airplanes</title>
       <?php 
       // This contains everything in the head tag

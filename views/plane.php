@@ -1,6 +1,18 @@
+
 <!DOCTYPE html>
 <html>
    <head>
+      <!--/////////////////////////////////////////////
+         /*
+          * DOCUMENT     : plane.php
+          * AUTHOR       : James Park
+          * SITE         : www.worldwartwoairplanes.com
+          * COPYRIGHT    : 2014
+          * DESCRIPTION  : This is the view that is set up for displaying the
+          *                information for a single plane; for the site 
+          *                www.worldwartwoairplanes.com
+          */
+      /////////////////////////////////////////////-->
       <title><?php echo $planeInfo['plane_name']; ?> | World War II Airplanes</title>
       <?php 
       // This contains everything in the head tag

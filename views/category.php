@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <!--/////////////////////////////////////////////
+         /*
+          * DOCUMENT     : category.php
+          * AUTHOR       : James Park
+          * SITE         : www.worldwartwoairplanes.com
+          * COPYRIGHT    : 2014
+          * DESCRIPTION  : This is the view that is set up for displaying the
+          *                pictures (as links) and the names (as links) to the 
+          *                planes based on the category selected (Allied, Axis,
+          *                Fighter, Bomber, Transport); for the site 
+          *                www.worldwartwoairplanes.com
+          */
+      /////////////////////////////////////////////-->
       <title><?php echo $type; ?> | World War II Airplanes</title>
       <?php 
       // This contains everything in the head tag
