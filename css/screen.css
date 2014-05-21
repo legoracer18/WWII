@@ -290,7 +290,7 @@ nav h2 {
 
 /*=====================Form Area=======================*/
 
-#form_wrapper {
+#form_wrapper, #register_form_container {
    float             : left;
    padding           : 10px;
    background-color  : #A4A875;
@@ -301,7 +301,13 @@ nav h2 {
    -moz-border-radius: 10px;
 }
 
+#register_form_container {
+   margin            : 10px;
+   max-width         : 600px;
+}
+
 fieldset {
+   display: block;
    margin            : 10px;
 }
 
@@ -314,6 +320,11 @@ label {
    text-align        : right;
    display           : block;
    margin-right      : 8px;
+}
+
+input {
+   display: block;
+   float             : left;
 }
 
 legend {
