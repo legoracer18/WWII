@@ -63,7 +63,7 @@ if ($action == 'p' && isset($_GET['id'])) {
    // Calls to the model.php
    $planePics = getPlanePics($id);
    // Calls to the functions.php
-   $jsPicList = jsScript($planePics);
+   $imageTags = setImageTags($planePics);
    
    // Set up the sources section
    // Calls to the functions.php

@@ -180,4 +180,16 @@ function jsScript($planePics) {
 
    return $output;
 }
+/*
+ * This function sets up a bunch of img tags with a certain planes
+ * images for the image slider at the bottom of the page.
+ */
+function setImageTags($planePics) {
+   $output = '';
+   foreach ($planePics as $pic) {
+      $output .= '<img src="'.$pic['urlPATH'].'" alt="'.$pic['alt'].'">';
+   }
+
+   return $output;
+}
 ?>

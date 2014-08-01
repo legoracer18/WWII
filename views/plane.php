@@ -18,19 +18,19 @@
       // This contains everything in the head tag
       include $_SERVER['DOCUMENT_ROOT'] . '/modules/head.php'; 
       ?>
-      <script type="text/javascript">
-         var mygallery = new fadeSlideShow({
-            wrapperid: "fadeshow", //ID of blank DIV on page to house Slideshow
-            dimensions: [400, 450], //width/height of gallery in pixels. Should reflect dimensions of largest image
-            imagearray: [
-               <?php echo $jsPicList; ?>
-            ],
-            displaymode: {type: 'manual', pause: 2500, cycles: 0, wraparound: false},
-            persist: false, //remember last viewed slide and recall within same session?
-            fadeduration: 500, //transition duration (milliseconds)
-            descreveal: "always",
-            togglerid: "fadeshowtoggler"
-         })
+      <!-- CSS and JS for the image slider -->
+      <link href="/css/js-image-slider.css" rel="stylesheet" type="text/css" />
+      <script src="/js/js-image-slider.js" type="text/javascript"></script>
+      <!-- Google Analytics -->
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-28788120-3', 'worldwartwoairplanes.com');
+         ga('require', 'displayfeatures');
+         ga('send', 'pageview');
 
       </script>
    </head>
@@ -61,15 +61,12 @@
             echo $specification;
          }
          ?>
-         <div id="fadeshowwrapper">
-            <div id="fadeshow"></div>
-
-            <div id="fadeshowtoggler">
-               <a href="#" class="prev"><img src="/images/left.png" style="border-width:0" alt="Go Left"></a>
-               <span class="status" style="margin:0 50px; font-weight:bold"></span>
-               <a href="#" class="next"><img src="/images/right.png" style="border-width:0" alt="Go Right"></a>
+         <!-- Slideshow goes here -->
+         <div id="sliderFrame">
+            <div id="slider">
+               <?php echo $imageTags; ?>
             </div>
-         </div>
+         </div><!--/sliderFrame-->
          <?php
          // This will be the sources if there are any.
          if (isset($sources)) {

@@ -211,7 +211,7 @@ function getSimilarPlanes($type) {
  */
 function getPlanePics($id) {
    $conn = dbConnection();
-   $sql = "SELECT urlPATH FROM images WHERE plane_ID = :id";
+   $sql = "SELECT urlPATH, alt FROM images WHERE plane_ID = :id";
    try {
       $stmt = $conn->prepare($sql);
       $stmt->bindValue(':id', $id, PDO::PARAM_INT);
